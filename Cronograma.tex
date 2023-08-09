@@ -1,0 +1,97 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfgantt}
+\title{Gantt Charts with the pgfgantt Package}
+\begin{document}
+
+%
+% A fairly complicated example from section 2.9 of the package
+% documentation. This reproduces an example from Wikipedia:
+% http://en.wikipedia.org/wiki/Gantt_chart
+%
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\setganttlinklabel{s-s}{INICIO-A-INICIO}
+\setganttlinklabel{f-s}{FIN-A-INICIO}
+\setganttlinklabel{f-f}{FIN-A-FIN}
+\sffamily
+\begin{ganttchart}[
+    canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+    hgrid style/.style={draw=black!5, line width=.75pt},
+    vgrid={*1{draw=black!5, line width=.75pt}},
+    today=1, %SEMANA EN LA CUAL SE ESTA
+    today rule/.style={
+      draw=black!64,
+      dash pattern=on 3.5pt off 4.5pt,
+      line width=1.5pt
+    },
+    today label font=\small\bfseries,
+    title/.style={draw=none, fill=none},
+    title label font=\bfseries\footnotesize,
+    title label node/.append style={below=7pt},
+    include title in canvas=false,
+    bar label font=\mdseries\small\color{black!70},
+    bar label node/.append style={left=2cm},
+    bar/.append style={draw=none, fill=black!63},
+    bar incomplete/.append style={fill=barblue},
+    bar progress label font=\mdseries\footnotesize\color{black!70},
+    group incomplete/.append style={fill=groupblue},
+    group left shift=0,
+    group right shift=0,
+    group height=.5,
+    group peaks tip position=0,
+    group label node/.append style={left=.6cm},
+    group progress label font=\bfseries\small,
+    link/.style={-latex, line width=1.5pt, linkred},
+    link label font=\scriptsize\bfseries,
+    link label node/.append style={below left=-2pt and 0pt}
+  ]{1}{13}
+  \gantttitle[
+    title label node/.append style={below left=7pt and -3pt}
+  ]{SEMANAS:\quad1}{1}
+  \gantttitlelist{2,...,35}{1} \\
+  \ganttgroup[progress=2]{DEFINICIÓN Y REVISION DE DOCUMENTACIÓN}{1}{14} \\
+  \ganttbar[
+    progress=8,
+    name=ACT1
+  ]{\textbf{Revisión de Literatura Científica y Técnica} }{1}{8} \\
+  \ganttbar[
+    progress=0,
+    name=ACT2
+  ]{\textbf{Definición de Requerimientos y Criterios de Evaluación} }{9}{14}  \\
+  
+  
+  \ganttgroup[progress=0]{CONFIGURACION E IMPLEMENTACION DE PRUEBAS}{15}{27} \\
+  \ganttbar[progress=0,name=ACT3]
+  {\textbf{Configuración del Entorno y Automatización con Selenium }}{15}{18} \\
+  \ganttbar[progress=0,
+    name=ACT4]
+  {\textbf{Configuración del Entorno y Automatización con Apium} }{19}{22} \\
+  \ganttbar[progress=0,
+    name=ACT5]
+  {\textbf{Implementación de Automatización y Recopilación de Datos} }{23}{27}\\
+
+
+  \ganttgroup[progress=0]{ANALISIS Y REVISIÓN DE RESULTADOS}{28}{35} \\
+  \ganttbar[progress=0, name=ACT6]
+  {\textbf{Análisis y Comparación de Resultados }}{28}{31} \\
+  \ganttbar[progress=0,
+    name=ACT7]
+  {\textbf{Evaluación de Fortalezas y Debilidades} }{32}{35} \\
+    
+  \ganttgroup[progress=0]{EDICIÓN Y REVISIÓN}{36}{39} \\
+  
+  \ganttgroup[progress=0]{FINALIZACIÓN}{39}{40} \\
+
+  \ganttlink[link type=f-s]{ACT1}{ACT2}
+  \ganttlink[link type=f-s]{ACT3}{ACT4}
+  \ganttlink[link type=f-s]{ACT4}{ACT5}
+  \ganttlink[link type=f-s]{ACT6}{ACT7}
+\end{ganttchart}
+
+
+ 
+\end{document}
