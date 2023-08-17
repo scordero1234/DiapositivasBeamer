@@ -1,0 +1,127 @@
+\documentclass{article}
+
+%Librerías
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\setlength{\textwidth}{18cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength{\headsep}{-1cm}
+\setlength{\voffset}{0cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headheight}{0cm}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows}
+\usepackage{multicol}
+\usepackage{lipsum} 
+%\bibliographystyle{apacite}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+
+
+\begin{document}
+
+%%%%%% ENCABEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Logo de la maestría
+\colorbox{white!10!}{
+    \begin{minipage}[t]{0.05\textwidth} %0.165 
+       \begin{flushright}
+        \includegraphics[width=2in]{logo UPS.png}
+       \end{flushright}
+    \end{minipage}
+    \begin{minipage}[H]{0.62 \textwidth} %0.62
+        \begin{center}
+         
+        \end{center}
+     \end{minipage}
+    \begin{minipage}[t]{0.05 \textwidth}
+        \begin{flushleft}
+        \hspace{10.25cm}
+            \includegraphics[width=2in]{Posgrados.png}
+        \end{flushleft}
+    \end{minipage}
+}
+
+\begin{tikzpicture}
+    \draw[thick] (-6.5,0)--(11.2,0);
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.1cm}
+\begin{center}
+{\large\textsc{ANTEPROYECTO DEL TRABAJO DE TITULACIÓN}} \\
+\vspace{0.5cm}
+{ \large \textbf{Cristian Ivan Idrovo Tapia} \\ 
+\vspace{0.25cm}
+{ \large \textbf{Santiago David Cordero Crespo }}
+\end{center}
+\vspace{0.1cm}
+
+\section{Tema del Trabajo de Titulación:  }
+\begin{center}
+Análisis Comparativo de Selenium y Appium para Pruebas de Regresión en la Aplicación Móvil  de la Cooperativa de Ahorro y Crédito Jardín Azuayo  ”JAMOVIL”: Calidad ,Eficiencia, Cobertura y Experiencia del Usuario
+\end{center}
+\section{Docente tutor propuesto:   }
+\begin{center}
+PhD. Gonzalo Pérez
+\end{center}
+\section{Antecedentes:}
+
+La evolución de las pruebas de regresión en aplicaciones móviles a lo largo del tiempo ha generado el surgimiento de nuevas herramientas y enfoques para la automatización de pruebas en dispositivos móviles.
+
+Con el crecimiento exponencial de aplicaciones móviles, surgieron herramientas específicas para automatizar las pruebas de regresión en este entorno. Estas herramientas, como Appium, Calabash, Selenium, XCTest, Espresso, entre otras, permiten a los equipos de prueba simular interacciones del usuario y verificar el comportamiento de las aplicaciones móviles en diferentes plataformas y dispositivos.
+
+A medida que la competencia en el mercado de aplicaciones móviles se intensificó, las pruebas de regresión comenzaron a centrarse más en la experiencia del usuario. Las pruebas exploratorias y las pruebas de usabilidad se integraron en los procesos de prueba para asegurar que las aplicaciones móviles fueran fáciles de usar y proporcionaran una experiencia de alta calidad para los usuarios finales.
+
+       
+\section{Justificación:}   
+
+Las aplicaciones móviles financieras, como "JAMOVIL", desempeñan un papel crucial en la vida de los usuarios, facilitando operaciones financieras y transacciones. Garantizar la calidad, eficiencia y experiencia del usuario en este tipo de aplicaciones es fundamental para ganar la confianza de los usuarios y mantener una ventaja competitiva en el mercado financiero móvil.
+
+La comparación entre dos herramientas líderes de automatización de pruebas, Selenium y Appium, permitirá identificar cuál de ellas es más adecuada para realizar pruebas de regresión en aplicaciones móviles financieras. Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones,lo que mejora la eficiencia del equipo de desarrollo y permite una entrega más rápida al mercado.
+
+\section{Objetivos:}
+Realizar un análisis comparativo detallado entre Selenium y Appium para las pruebas de regresión en el aplicativo móvil, lo que permitirá tomar decisiones informadas sobre qué herramienta de automatización es más adecuada para las necesidades particulares del proyecto, asegurando la calidad y funcionalidad del aplicativo móvil en cada iteración y actualización.
+\subsection*{Objetivo General:}
+ Evaluar y comparar la eficiencia, cobertura y experiencia del usuario al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL", utilizando las herramientas de automatización Selenium y Appium, para mejorar la calidad del software y optimizar la eficiencia del proceso de pruebas
+\subsection*{Objetivos Específicos:}
+
+\begin{itemize}
+    \item Configurar el entorno de pruebas y establecer los escenarios de prueba necesarios para la aplicación móvil financiera "JAMOVIL" en ambas herramientas de automatización, Selenium y Appium.
+    \item Implementar las pruebas de regresión en la aplicación móvil "JAMOVIL" utilizando Selenium, para medir el tiempo de ejecución y el consumo de recursos durante las pruebas para evaluar los resultados.
+    \item Implementar las pruebas de regresión en la aplicación móvil "JAMOVIL" utilizando Appium, para medir el tiempo de ejecución y el consumo de recursos durante las pruebas para evaluar los resultados.
+    \item Analizar y comparar los resultados obtenidos en las pruebas independientes realizadas con Selenium y Appium, para identificar las ventajas y desventajas de cada aplicación.
+\end{itemize}
+
+\section{Alcance:}
+
+Este estudio se enfocará en realizar un análisis comparativo de las herramientas de automatización de pruebas Selenium y Appium en la aplicación móvil financiera "JAMOVIL". Se evaluará la eficiencia, cobertura y experiencia del usuario durante las pruebas de regresión.
+
+Para ello, se diseñarán y ejecutarán casos de prueba representativos y relevantes que abarquen diversas funcionalidades, escenarios y flujos de la aplicación. La eficiencia de las herramientas será evaluada en términos del tiempo de ejecución de las pruebas y la velocidad de respuesta. La cobertura de las pruebas se medirá en función del número de casos de prueba cubiertos y la profundidad de la cobertura. Además, se considerará la experiencia del usuario al interactuar con la aplicación durante las pruebas de regresión.
+
+El estudio se desarrollará en un ambiente de prueba controlado, que incluirá la configuración adecuada de dispositivos móviles, emuladores o simuladores, y la infraestructura necesaria para llevar a cabo las pruebas. Asimismo, se tendrán en cuenta aspectos de seguridad y privacidad de los datos, dada la naturaleza financiera de la aplicación.
+
+Los resultados obtenidos proporcionarán información para seleccionar y utilizar adecuadamente las herramientas de automatización de pruebas en proyectos similares, asegurando una evaluación completa y confiable en el ámbito de las aplicaciones móviles financieras.
+
+
+\section{Metodología:}
+
+Se ejecutarán las pruebas de regresión utilizando tanto Selenium como Appium en el entorno  adecuado para la aplicación "JAMOVIL", que incluirá dispositivos móviles, plataformas y versiones de sistemas operativos relevantes, registrando y recopilando datos sobre el tiempo de ejecución de las pruebas, la cobertura de casos de prueba, la detección de errores y la experiencia del usuario durante las pruebas.
+
+
+\section{Cronograma de actividades:}
+Detalla las actividades generales que se desarrollarán hasta la fecha en la que el estudiante presentará su Trabajo de Titulación. 
+
+\section{Presupuesto: (Opcional)}
+
+Este apartado incluirá los recursos e información financiera para el Trabajo de Titulación. 
+\bibliographystyle{abbrv}
+%apacite
+
+
+
+\bibliography{sample}
+
+\vspace{1cm}
+Este apartado contiene el listado de referencias empleadas para la elaboración del documento, de preferencia en formato APA u otros formatos Preconocidos.
+
+
+\end{document}
