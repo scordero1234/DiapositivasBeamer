@@ -2,8 +2,11 @@
 
 % Tema de la presentación
 \usetheme{Madrid}
-
-
+\usepackage{ragged2e} 
+\documentclass{article}
+\usepackage{pgfgantt}
+\usepackage{geometry}
+\usepackage{pgfgantt}
 
 
 \begin{document}
@@ -26,26 +29,22 @@
 
 
 \begin{frame}{Introducción}
+\justify
+En la actualidad el desarrollo y mantenimiento de aplicaciones móviles se ha convertido en un desafío constante para los desarrolladores, por otra parte se ha potenciado el uso de herramientas tales como Appium y Selenium que permiten automatizar las pruebas de regresión garantizando que las nuevas implementaciones no afecten las características previamente establecidas.
+\newline
+\newline
+La aplicación móvil financiera de la cooperativa de ahorro y crédito Jardin Azuayo ”JAMOVIL” es una solución tecnológica que brinda una experiencia eficiente y accesible para sus usuarios, facilitando operaciones financieras y transacciones. Aplicación que se encuentra en constante evolución para mantener una ventaja competitiva en el mercado financiero.
 
-La constante evolución de aplicaciones móviles ha surgido la necesidad de potenciar herramientas específicas para automatizar las pruebas de regresión en dispositivos móviles tales como:
-
- \begin{itemize}
-    \item Appium.
-    \item Selenium.
-  \end{itemize} 
-
-A medida que la competencia en el mercado de aplicaciones móviles se intensificó, las pruebas de regresión comenzaron a centrarse más en la experiencia del usuario.
 \end{frame}
 
 
 \section{Justificación}
 
 \begin{frame}{Justificación}
-La  aplicación móvil financiera de la cooperativa de ahorro y crédito Jardin Azuayo "JAMOVIL" es una solución tecnologica que brinda una experiencia efeciente y accesible para sus usuarios, facilitando operaciones financieras y transacciones. Garantizar la calidad, eficiencia y experiencia del usuario en este tipo de aplicaciones es fundamental para  mantener una ventaja competitiva en el mercado financiero móvil.
-
-La comparación entre dos herramientas líderes de automatización de pruebas, Selenium y Appium, permitirá identificar cuál de ellas es más adecuada para realizar pruebas de regresión en aplicaciones móviles financieras. 
-
-Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones, lo que mejora la eficiencia del equipo de desarrollo, optimizara los tiempos de pruebas de calidad de software y experiencia de usuario
+\justify
+El análisis comparativo entre Selenium y Appium, permitirá identificar cual de ellas es la adecuada para garantizar la calidad, eficiencia y experiencia del usuario realizar pruebas de regresión en aplicaciones móviles.\newline
+\newline
+El uso de estas herramientas ayudará a los desarrolladores a acelerar la liberación de nuevas versiones, lo que mejora la eficiencia del equipo de desarrollo optimizando los tiempos de pruebas de calidad de software y experiencia de usuario
 \end{frame}
 
 \section{Objetivos}
@@ -53,14 +52,14 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo General }
   \begin{columns}
     \begin{column}{0.5\textwidth}
-     Evaluar y comparar la eficiencia, cobertura y experiencia del usuario al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL", utilizando las herramientas de automatización Selenium y Appium, para mejorar la calidad del software y optimizar la eficiencia del proceso de pruebas. 
+     Comparar y Evaluar la calidad , eficiencia, cobertura y experiencia del usuario al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL", utilizando las herramientas de automatización Selenium y Appium, para obtimizar el proceso de pruebas mejorando la calidad del software
    
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{itemize}
           \item Que voy hacer ?
           \begin{itemize}
-              \item Evaluar y comparar la eficiencia, cobertura y experiencia del usuario al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL"
+              \item Comparar y Evaluar la calidad , eficiencia, cobertura y experiencia del usuario al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL"
           \end{itemize}
           \item Como lo voy hacer ?
           \begin{itemize}
@@ -68,7 +67,7 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
           \end{itemize}
           \item ¿Para qué lo voy a hacer?
            \begin{itemize}
-              \item Para mejorar la calidad del software y optimizar la eficiencia del proceso de pruebas 
+              \item Para obtimizar el proceso de pruebas mejorando la calidad del software.
           \end{itemize}         
           \end{itemize}
     \end{column}
@@ -79,13 +78,14 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo Específico 1 }
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      Realizar una revisión exhaustiva de la literatura científica y técnica sobre pruebas de regresión en aplicaciones móviles financieras, enfocándose en estudios, investigaciones para identificar y analizar las herramientas de automatización Selenium y Appium
+    \justify
+      Realizar una revisión exhaustiva de la literatura científica y técnica sobre pruebas de regresión en aplicaciones móviles financieras, enfocándose en estudios, investigaciones determinar cuál de las dos herramientas puede brindar resultados de pruebas más rápidos y exhaustivos para mejorar la calidad de Software.
     \end{column}
     \begin{column}{0.55\textwidth}
       \begin{itemize}
           \item Que voy hacer ?
           \begin{itemize}
-              \item Realizar una revisión exhaustiva de la literatura científica y técnica sobre pruebas de regresión en aplicaciones móviles financieras
+              \item Realizar una revisión exhaustiva de la literatura científica y técnica sobre pruebas de regresión en aplicaciones móviles.
           \end{itemize}
           \item Como lo voy hacer ?
           \begin{itemize}
@@ -93,7 +93,7 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
           \end{itemize}
           \item ¿Para qué lo voy a hacer?
           \begin{itemize}
-              \item para identificar y analizar las herramientas de automatización  Selenium y Appium 
+              \item determinar cuál de las dos herramientas puede brindar resultados de pruebas más rápidos y exhaustivos para mejorar la calidad de Software.
           \end{itemize}
       \end{itemize}
     \end{column}
@@ -103,6 +103,7 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo Específico 2 }
   \begin{columns}
     \begin{column}{0.5\textwidth}
+    \justify
      Definir el conjunto de requerimientos y criterios de evaluación utilizando herramientas de automatización Selenium y Appium en las pruebas de regresión de la aplicación móvil financiera "JAMOVIL" para evaluar y comparar la eficiencia, calidad, cobertura de casos de prueba y experiencia del usuario 
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -117,7 +118,10 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
           \end{itemize}
           \item ¿Para qué lo voy a hacer?
           \begin{itemize}
-                  \item utilizando herramientas de automatización Selenium y Appium en las pruebas de regresión de la aplicación móvil financiera "JAMOVIL"
+                  \item Para evaluar
+y comparar la eficiencia, calidad,
+cobertura de casos de prueba y
+experiencia del usuario
           \end{itemize}
       \end{itemize}
     \end{column}
@@ -127,7 +131,8 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo Específico 3 }
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      Implementar la automatización de pruebas con Selenium y Appium, asegurando la configuración adecuada en el ambiente de pruebas y dispositivos móviles, para recolectar información que será utilizada en el proceso de análisis. 
+    \justify
+      Implementar la automatización de pruebas con Selenium y Appium, asegurando la configuración adecuada en el ambiente de pruebas y dispositivos móviles, para recolectar información que será utilizada en el proceso de análisis y resultados. 
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{itemize}
@@ -141,7 +146,7 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
           \end{itemize}
          \item ¿Para qué lo voy a hacer?
          \begin{itemize}
-              \item Para recolectar información que será utilizada en el proceso de análisis.
+              \item Para recolectar información que será utilizada en el proceso de análisis y resultados.
           \end{itemize}
       \end{itemize}
     \end{column}
@@ -152,6 +157,7 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo Específico 4 }
   \begin{columns}
     \begin{column}{0.5\textwidth}
+    \justify
       Medir y comparar las pruebas de regresión obtenida con Selenium y Appium, considerando el número de casos de prueba ejecutados y la profundidad de la cobertura en diferentes escenarios de prueba, para determinar cual de las dos herramientas ofrece una mayor cobertura de pruebas. 
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -176,11 +182,14 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \begin{frame}{Objetivo Específico 5 }
   \begin{columns}
     \begin{column}{0.5\textwidth}
+    \justify
       Identificar fortalezas y debilidades de cada herramienta de automatización Selenium y Appium, considerando factores como la complejidad de la implementación, la facilidad de mantenimiento y la escalabilidad, para tomar las decision sobre cual herramienta es la mas adecuada para realizar el proceso de pruebas en la JAMOVIL 
  
     \end{column}
     \begin{column}{0.5\textwidth}
+    
       \begin{itemize}
+      
           \item Que voy hacer ?
           \begin{itemize}
               \item Identificar fortalezas y debilidades de cada herramienta de automatización Selenium y Appium
@@ -203,23 +212,24 @@ Esto ayudara a los desarrolladores a acelerar la liberación de nuevas versiones
 \section{Metodología}
 
 \begin{frame}{Metodología}
+\justify
 Se ejecutará una revisión de la literatura científica y técnica sobre pruebas de regresión en la aplicaciones móvil “JAMOVIL”, enfocándose en estudios relevantes. Posterior a ello, se analizarán y evaluarán las herramientas de automatización Selenium y Appium, identificando sus características, ventajas y desventajas en el contexto específico de pruebas de regresión.
-Luego, se definirán requerimientos y criterios de evaluación para las pruebas de regresión de la aplicación "JAMOVIL", considerando aspectos como eficiencia, calidad, cobertura de casos de prueba y experiencia del usuario durante el proceso de pruebas.
+\newline
+\newline
+Se definirán requerimientos y criterios de evaluación para las pruebas de regresión de la aplicación "JAMOVIL", considerando aspectos como eficiencia, calidad, cobertura de casos de prueba y experiencia del usuario durante el proceso de pruebas.
 La implementación de la automatización de pruebas involucra configurar el ambiente de pruebas con dispositivos móviles, emuladores o simuladores,  para recolectar datos relevantes para el análisis.
-En la etapa de medición y comparación de resultados, se ejecutarán pruebas de regresión con ambas herramientas en diferentes escenarios de la aplicación "JAMOVIL". Se compararán los resultados, teniendo en cuenta el número de casos de prueba ejecutados y la profundidad de la cobertura para determinar la herramienta más adecuada. 
 \end{frame}
-
 
 
 \section{Cronograma}
 
 \begin{frame}{Cronograma}
-  \begin{itemize}
-    \item<1-> Elemento 1 (Aparece desde la diapositiva 1 en adelante)
-    \item<2-> Elemento 2 (Aparece desde la diapositiva 2 en adelante)
-    \item<3-> Elemento 3 (Aparece desde la diapositiva 3 en adelante)
-    \item<4-> Elemento 4 (Aparece desde la diapositiva 4 en adelante)
-  \end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{cronograma.png}
+\caption{Cronograma de actividades}
+\label{FIG1:1}
+\end{figure}
 \end{frame}
 
 \section{Presupuesto}
